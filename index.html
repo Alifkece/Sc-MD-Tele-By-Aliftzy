@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download Ville by Alif</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    /* Video background */
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      background-color: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      max-width: 600px;
+      margin: 80px auto;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin: 20px auto;
+    }
+
+    a.download-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #00c6ff;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    a.download-btn:hover {
+      background-color: #0072ff;
+    }
+
+    audio {
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    .popup {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .popup-content {
+      background-color: #fff;
+      color: #333;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .popup-content button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #00c6ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="https://files.catbox.moe/sqna6j.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video background.
+  </video>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>Hayo Mau Ambil Sc Yaa wkwk</h2>
+      <p>Jika Mau Buy Yang No Enc Bisa Chet Tele @Aliftzycrt</p>
+      <button onclick="document.getElementById('popup').style.display='none'">Lanjut</button>
+    </div>
+  </div>
+
+  <!-- Konten Utama -->
+  <div class="container">
+    <h1>Welcome All Apa Kabar</h1>
+    <img src="https://files.catbox.moe/olkc3w.jpeg" alt="Foto Profil Alif" class="profile-pic">
+    <p>Klik Tombol Di Bawah Untuk Download Sc:</p>
+    <a class="download-btn" href="https://www.mediafire.com/file/557b5updhgd89ps/SC+MD+VIA+TELE+BY+@Aliftzycrt+enc.zip/file" target="_blank">Download Sc Nya</a>
+
+    <audio controls>
+      <source src="https://files.catbox.moe/chrc6r.mpeg" type="audio/mpeg">
+      Browser kamu tidak mendukung pemutar audio.
+    </audio>
+  </div>
+
+  <script>
+    window.onload = function() {
+      document.getElementById('popup').style.display = 'flex';
+    };
+  </script>
+</body>
+</html>
